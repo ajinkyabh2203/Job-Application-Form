@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1>Job Application Form</h1>
+        <big>Please Fill Out the Form Below to Submit Your Job Application!</big
+        ><br />
+        <hr />
+      </center>
+    </header>
+
+    <main>
+      <section>
+        <form action="action.php">
+          <p>Name <span style="color: #ff0000">*</span></p>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+
+          <p>Email<span style="color: #ff0000"> *</span></p>
+          <input type="email" placeholder="ex: example@example.com" />
+
+          <p>Phone<span style="color: #ff0000"> *</span></p>
+          <input type="number" placeholder="+91 - XXXXX-XXXXX" />
+
+          <p>Current Position</p>
+          <input type="radio" name="position" value="Fresher" />
+          <label for="fresher">Fresher</label><br />
+          <input type="radio" name="position" value="Developer" />
+          <label for="fresher">Developer</label><br />
+          <input type="radio" name="position" value="Software Engineer" />
+          <label for="fresher">Software Engineer</label><br />
+          <input type="radio" name="position" value="Unemployed" />
+          <label for="fresher">Unemployed</label><br />
+
+          <p>Earliest Possible Start Date : <input type="date" /></p>
+
+          <p>Applied Position : <input type="text" /></p>
+
+          <p>Preferred Interview Date</p>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=c_ae7589c57a4f916d7d57b586a2bc474a3fcf74dcddb9e6a6fbe15a38ea7958aa%40group.calendar.google.com&ctz=UTC"
+            style="border: 0"
+            width="300"
+            height="200"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+
+          <p>Cover Letter</p>
+          <textarea placeholder="Write here" cols="39" rows="8"></textarea>
+
+          <p><input type="submit" /></p>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
